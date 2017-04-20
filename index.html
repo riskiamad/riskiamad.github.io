@@ -4,12 +4,13 @@
       <title>Riskiamad | Personal Website</title>
       <link rel="shortcut icon" href="image/icon/icon.png">
       <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/css?family=Mada" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="include/css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="include/css/custom.css"  media="screen,projection"/>
-
+      <link type="text/css" rel="stylesheet" href="include/css/animate.css"  media="screen,projection"/>
+      
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -23,26 +24,25 @@
           <nav class="transparent z-depth-0">
             <div id="nav-wrapper" class="nav-wrapper container">
               <a id="logolink" class="brand-logo tooltipped" data-position="bottom" data-delay="50" data-tooltip="Back to Top" href="#home"><img src="image/logo-header.png" class="responsice-img nav-logo" alt=""></a>
-              <a href="#" data-activates="hamburger" class="button-collapse"><i class="material-icons" style="color: grey">menu</i></a>
+              <a id="hamburger-menu" href="#" data-activates="hamburger" class="button-collapse"><i class="material-icons" style="color: grey">menu</i></a>
               <ul id="navbar-menu" class="right hide-on-med-and-down">
                 <li><a href="#home" class="grey-text text-darken-1">Home</a></li>
                 <li><a href="#about" class="grey-text text-darken-1">About</a></li>
                 <li><a href="#education" class="grey-text text-darken-1">Education</a></li>
                 <li><a href="#experience" class="grey-text text-darken-1">Experience</a></li>
                 <li><a href="#contact" class="grey-text text-darken-1">Contact</a></li>                
-              </ul>
-
-              <!-- mobile hamburger menu list -->
-              <ul class="side-nav grey lighten-5" id="hamburger">
+              </ul>            
+            </div>
+          </nav>
+        </div>
+                      <!-- mobile hamburger menu list -->
+              <ul class="side-nav blue-grey lighten-5" id="hamburger">
                 <li><a href="#home" class="light-blue-text text-lighten-1">Home</a></li>
                 <li><a href="#about" class="light-blue-text text-lighten-1">About</a></li>
                 <li><a href="#education" class="light-blue-text text-lighten-1">Education</a></li>
                 <li><a href="#experience" class="light-blue-text text-lighten-1">Experience</a></li>
                 <li><a href="#contact" class="light-blue-text text-lighten-1">Contact</a></li>                
-              </ul>              
-            </div>
-          </nav>
-        </div>
+              </ul>  
 
         <div class="header-container">
           <div class="header-row"><img src="image/logo-header.png" class="responsive-img"></div>
@@ -57,7 +57,7 @@
         <div class="about-wrapper container">
 
           <div class="row center-align">
-            <h3 class="light-blue-text text-accent-4">About Me</h3>
+            <h3 id="about-title" class="light-blue-text text-accent-4">About Me</h3>
           </div>
           
           <div class="row">
@@ -67,7 +67,7 @@
                   <img src="image/FullSizeRender.jpg" class="responsive-img circle" style="height: 150px">
                   <h4 class="blue-grey-text text-accent-2">Achmad Rizky Syahrani</h4>
                   <p class="grey-text text-darken-3" style="text-align: justify"> &emsp; &emsp; Hello! I am Rizky, I am an Informatics Management Student and I've been unemployment since March 2017. I interested in Web Design / Development and Design Graphic. I love learning code and I need more challenge & experience to improve my skill. I love music and soccer too.</p>  <br> <br>
-                  <a href="https://drive.google.com/file/d/0B8fUE9Rz5rO7Q0tNc2pWSjZpLU0/view" class="waves-effect waves-light btn-flat light-blue accent-4 blue-grey-text text-lighten-4">Download CV</a>
+                  <a id="downloadcv" href="https://drive.google.com/file/d/0B8fUE9Rz5rO7Q0tNc2pWSjZpLU0/view" class="waves-effect waves-light btn-flat light-blue accent-4 blue-grey-text text-lighten-4">Download CV</a>
                 </div>
               </div>
             </div>
@@ -98,7 +98,7 @@
                 <img src="image/icon/education-512.png" class="responsive-img" style="height: 150px">
                 <h4 class="light-blue-text text-accent-4">Bina Sarana Informatika</h4>
                 <h6 class="grey-text text-darken-2">Informatics Management</h6><br> <hr /><br>
-                <p class="grey-text text-accent-2" style="text-align: justify">&emsp; &emsp;I entered this college in 2012, I had semester break for one year in 2013 because I have to work in shifts. I re-entered in 2014, and now I'm still making a thesis for my graduation. In here I learned C ++, VB6, Delphi, PHP, HTML, CSS, Mysql, and many more.</p>                
+                <p class="grey-text text-accent-2" style="text-align: justify">&emsp; &emsp;I entered this college in 2012, I had semester break for one year in 2013 because I have to work in shifts. I re-entered in 2014, and now I'm still making a thesis for my graduation. In here I learned C++, VB6, Delphi, PHP, HTML, CSS, Mysql, and many more.</p>                
               </div>
             </div>
           </div>
@@ -163,10 +163,10 @@
             </div>
 
             <div class="col l6 s12 center-align">
-              <a href="https://github.com/riskiamad" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Github : riskiamad"><img class="socmed" src="image/icon/Github_social_media_logo.png" style="height: 50px" alt=""></a>
-              <a href="https://instagram.com/riskiamad/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Instagram : @riskiamad"><img class="socmed" src="image/icon/instagram_social_media_logo.png" style="height: 50px" alt=""></a>
-              <a href="http://twitter.com/@riskiamad" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="twitter : @riskiamad"><img class="socmed" src="image/icon/twitter_social_media_logo.png" style="height: 50px" alt=""></a>
-              <a href="http://facebook.com/riskiamad" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook : riskiamad"><img class="socmed" src="image/icon/facebook_social_media_logo.png" style="height: 50px" alt=""></a>
+              <a href="https://github.com/riskiamad" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Github : riskiamad"><img id="github" class="socmed" src="image/icon/Github_social_media_logo.png" style="height: 50px" alt=""></a>
+              <a href="https://instagram.com/riskiamad/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Instagram : @riskiamad"><img id="ig" class="socmed" src="image/icon/instagram_social_media_logo.png" style="height: 50px" alt=""></a>
+              <a href="http://twitter.com/@riskiamad" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="twitter : @riskiamad"><img id="twitter" class="socmed" src="image/icon/twitter_social_media_logo.png" style="height: 50px" alt=""></a>
+              <a href="http://facebook.com/riskiamad" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook : riskiamad"><img id="fb" class="socmed" src="image/icon/facebook_social_media_logo.png" style="height: 50px" alt=""></a>
             </div>
           
           </div>
@@ -190,14 +190,71 @@
         $(document).ready(function() {
 
           /* hamburger */
-          $(".button-collapse").sideNav();
           $('.materialboxed').materialbox();
           $('.scrollspy').scrollSpy();
+          $(".button-collapse").sideNav();
+
+          $('.button-collapse').sideNav({
+              menuWidth: 200, // Default is 300
+              edge: 'left', // Choose the horizontal origin
+              closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+              draggable: true // Choose whether you can drag to open on touch screens
+            }
+          );
 
           /* tooltip */
           $('.tooltipped').tooltip({delay: 50});
 
+          /*animate.css*/
+          $.fn.extend({
+              animateCss: function (animationName) {
+                  var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                  this.addClass('animated ' + animationName).one(animationEnd, function() {
+                      $(this).removeClass('animated ' + animationName);
+                  });
+              }
+          });
 
+          $('#downloadcv').hover(function(){
+            $('#downloadcv').animateCss('rubberBand');
+          });
+
+          $('#downloadcv').click(function(){
+            $('#downloadcv').animateCss('pulse');
+          });
+
+          $('#github').hover(function(){
+            $('#github').animateCss('bounce');
+          });
+
+          $('#ig').hover(function(){
+            $('#ig').animateCss('bounce');
+          });
+
+          $('#twitter').hover(function(){
+            $('#twitter').animateCss('bounce');
+          });
+
+          $('#fb').hover(function(){
+            $('#fb').animateCss('bounce');
+          });    
+
+          $('#github').click(function(){
+            $('#github').animateCss('fadeOut');
+          });
+
+          $('#ig').click(function(){
+            $('#ig').animateCss('fadeOut');
+          });
+
+          $('#twitter').click(function(){
+            $('#twitter').animateCss('fadeOut');
+          });
+
+          $('#fb').click(function(){
+            $('#fb').animateCss('fadeOut');
+          });                     
+          
           /* navbar function */
           var anchor_offset = $('#name-header').offset().top;
 
